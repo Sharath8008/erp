@@ -5,7 +5,6 @@ pathlib~=1.0.1
 jupyter~=1.0.0
 pip~=22.2.2
 panel~=0.13.1
-dataclasses>=0.7,<0.9
 attrs~=21.4.0
 zlib~=1.2.12
 wheel~=0.37.1
