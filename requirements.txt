@@ -9,7 +9,6 @@ dataclasses~=0.8
 attrs~=21.4.0
 zlib~=1.2.12
 wheel~=0.37.1
-openssl~=1.1.1q
 cryptography~=37.0.1
 pillow~=9.2.0
 docutils~=0.18.1
