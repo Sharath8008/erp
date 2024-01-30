@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block head  %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- CSS Files -->
+  <link id="pagestyle" rel="stylesheet" href="{% static 'assets/css/login.css' %}" />
+
+
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+  <script href="{% static 'assets/js/login.js' %}"></script>
+ {% endblock %}
+
+ {% block content  %}
+<div class="form">
+    <div class="loginform">
+        <h2>Login</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <p style="margin-bottom: 0px;">Username</p>
+            <input type="text" name="username" placeholder="Username">
+            <p style="margin-bottom: 0px;">Password</p>
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" name="login-btn" value="Login">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+{% endblock %}

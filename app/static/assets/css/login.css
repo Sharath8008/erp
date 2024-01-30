@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loginform {
+    background: #ffffff;
+    width: 450px;
+    color: #4caf50;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 29px 0px #e0e0e0;
+    margin: auto; /* Adjust the margin to position the form card */
+}
+.loginform h2 {
+    font-size: 30px;
+    margin: 30px 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center; /* Center the text within the card */
+}
+.loginform input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.loginform input[type="text"],
+.loginform input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #1e5220;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #333;
+    font-size: 16px;
+}
+.loginform input[type="submit"] {
+    background: #4CAF50;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: none;
+    margin-bottom: 5px;
+}
+.loginform input[type="submit"]:hover {
+    cursor: pointer;
+    background: #1f5822;
+}
+.loginform a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e5220;
+}
+.loginform .have-not {
+    float: right;
+}
+.loginform a:hover {
+    color: #4caf50;
+}
+
+/* Responsive CSS */
+@media (max-width: 576px) {
+    .loginform {
+        width: 90%;
+    }
+    .loginform a {
+        display: block;
+        text-align: center;
+        float: inherit !important;
+        margin: 10px 0px;
+    }
+}
