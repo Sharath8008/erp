@@ -125,6 +125,7 @@ MEDIA_URL = '/images/'
 # STATICFILES_DIRS = ('static', )
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    BASE_DIR / "app/static",
 ]
 
 
